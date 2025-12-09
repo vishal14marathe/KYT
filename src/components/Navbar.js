@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Styles/Navbar.css";
 import Company_Logo from "../assets/Company_Logo.png";
 
@@ -13,9 +14,10 @@ const Navbar = () => {
       </div>
 
       <ul className="nav-links">
-        <li>Blogs</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><Link to="/blogs">Blogs</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/privacy">Privacy</Link></li>
       </ul>
 
       <button className="btn-primary">Download the App</button>

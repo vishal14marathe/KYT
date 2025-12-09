@@ -1,7 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import SafetyIntelligence from "./components/SafetyIntelligence";
@@ -10,21 +10,38 @@ import TestimonialCard from "./components/TestimonialCard";
 import CTASection from "./components/CTASection";
 import FooterSection from "./components/FooterSection";
 import PromoVideoSection from "./components/PromoVideoSection";
+import Contact from "./components/Contact";
+import Privacy from "./components/Privacy";
 
 function App() {
   return (
-    <>
-      <div className="app-container">
-        <Navbar />
-        <HeroSection />
-        <SafetyIntelligence />
-        <DownloadSection />
-        <PromoVideoSection />
-        <TestimonialCard />
-        <CTASection />
-        <FooterSection />
-      </div>
-    </>
+    <Router>
+      <Navbar />
+
+      <Routes>
+        {/* HOME PAGE */}
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <SafetyIntelligence />
+              <DownloadSection />
+              <PromoVideoSection />
+              <TestimonialCard />
+              <CTASection />
+              <FooterSection />
+            </>
+          }
+        />
+
+        {/* CONTACT PAGE */}
+        <Route path="/contact" element={<Contact />} />
+
+        {/* PRIVACY PAGE */}
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+    </Router>
   );
 }
 
