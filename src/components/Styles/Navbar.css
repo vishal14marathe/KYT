@@ -1,0 +1,139 @@
+/* Styles/Navbar.css */
+.nav {
+  width: 100%;
+  max-width: 1248px;
+
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+}
+
+.company_logo img {
+  width: 20px;
+  height: 35px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.logo span[role="img"] {
+  font-size: 1.6rem;
+}
+
+.highlight {
+  color: #4a55ff;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li {
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-links li:hover {
+  color: #4a55ff;
+}
+
+.nav .btn-primary {
+  background: rgba(83, 81, 237, 1);
+  color: white;
+  padding: 22px 32px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav .btn-primary:hover {
+  background: #3a45ef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 85, 255, 0.3);
+}
+
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 20px 30px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    position: relative;
+    left: 0;
+    transform: none;
+    gap: 25px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav .btn-primary {
+    order: 2;
+  }
+
+  .logo {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

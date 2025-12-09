@@ -1,0 +1,335 @@
+/* Styles/HeroSection.css */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 4% 80px;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* LEFT CONTENT */
+.hero-left {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.left-content {
+  max-width: 831px;
+}
+
+.vision {
+  font-size: 1.2rem;
+  color: #808080;
+  margin-bottom: -9px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 25px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: -80px;
+  padding-top: 6px;
+}
+
+.hero-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #5a5a5a;
+  margin-bottom: 82px;
+  margin-top: 95px;
+}
+
+.left-content p {
+  font-size: 25px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: -80px;
+  padding-top: 6px;
+}
+
+.hero-title br {
+  display: block;
+}
+
+.hero-left .btn-primary {
+  background: linear-gradient(135deg, #4a55ff 0%, #3a45ef 100%);
+  color: white;
+  padding: 21px 32px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 85, 255, 0.2);
+  margin-bottom: 50px;
+}
+
+.hero-left .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(74, 85, 255, 0.3);
+}
+
+/* ------------------------------------------------ */
+/* HORIZONTAL FEATURE CARDS – make 3 in one row    */
+/* ------------------------------------------------ */
+.features-horizontal {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.feature-card-horizontal {
+  background: #ffffff;
+  padding: 18px 13px;
+  border-radius: 18px;
+  box-shadow: 8px 13px 13px -2px rgba(83, 81, 244, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #bbbbbb;
+  text-align: center;
+  flex: 0 0 155px;
+}
+
+.feature-card-horizontal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* icon inside cards */
+.Ai_Safety,
+.feature-icon-horizontal img,
+.feature-icon img {
+  width: 55px;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: 13px;
+}
+
+.feature-title-horizontal {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.feature-desc-horizontal {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* RIGHT VISUAL SECTION */
+.hero-visual {
+  flex: 1;
+  position: relative;
+  height: 580px;
+  min-width: 600px;
+  max-width: 700px;
+}
+
+/* BACKGROUND CIRCLES */
+.big-circle,
+.mid-circle,
+.small-circle {
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-circle {
+  width: 500px;
+  height: 500px;
+}
+
+.mid-circle {
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(212, 212, 224, 0.3);
+}
+
+.small-circle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(212, 212, 224, 0.4);
+}
+
+/* CENTER CITY IMAGE */
+.city-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* CARDS */
+.safety-card,
+.alert-card,
+.map-card {
+  position: absolute;
+  z-index: 5;
+}
+
+/* SAFETY SCORE CARD */
+.safety-card {
+  width: 285px;
+  top: -37px;
+  right: 80px;
+  transform: rotate(-2.61deg);
+}
+
+/* ALERT CARD */
+.alert-card {
+  width: 310px;
+  min-height: 80px;
+  bottom: 220px;
+  left: -87px;
+  transform: rotate(-2.56deg);
+}
+
+/* MAP CARD */
+.map-card {
+  width: 250px;
+  height: 220px;
+  bottom: -60px;
+  right: 123px;
+  transform: rotate(-22.83deg);
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 5% 60px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .left-content {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    min-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .features-horizontal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-visual {
+    min-width: 100%;
+    height: 450px;
+  }
+
+  .big-circle {
+    width: 380px;
+    height: 380px;
+  }
+
+  .mid-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .small-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .city-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* on mobile, stack cards vertically again */
+  .features-horizontal {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 15px;
+  }
+
+  .feature-card-horizontal {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .safety-card,
+  .alert-card,
+  .map-card {
+    position: relative;
+    margin: 20px auto;
+    transform: none !important;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-visual {
+    height: 400px;
+  }
+
+  .big-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .mid-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .small-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .city-img {
+    width: 160px;
+    height: 160px;
+  }
+}

@@ -1,0 +1,84 @@
+/* MAIN WRAPPER */
+.download-section {
+  width: 71%;
+  margin: 145px auto;
+  border-radius: 20px;
+  background: linear-gradient(115deg, #6165d7 0%, #5351ed 50%);
+  position: relative;
+  padding: 103px 83px;
+  padding-right: 300px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+/* LEFT TEXT CONTENT */
+.left-contents {
+  color: #ffffff;
+  max-width: 480px;
+}
+
+.left-contents h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.left-contents p {
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* BUTTON */
+.left-contents button {
+  background: #ffffff;
+  color: #4f44ff;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.left-contents button:hover {
+  transform: translateY(-2px);
+}
+
+/* RIGHT PHONE AREA */
+.right-phone {
+  position: absolute;
+  right: 40px;
+  bottom: -60px;
+  width: 450px;
+  height: 550px;
+}
+
+/* FIXED: Bigger circle, centered behind phone */
+
+.phone-bg-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(97, 101, 215, 1);
+  position: absolute;
+  top: 58%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* FIXED: Natural proportions, correct rotation */
+.iphone-img {
+  width: 443px;
+  height: auto;
+  /* transform: rotate(1deg); */
+  position: absolute;
+  right: 0;
+  bottom: -51px;
+  z-index: 2;
+}

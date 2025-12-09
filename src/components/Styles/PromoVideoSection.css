@@ -1,0 +1,17 @@
+/* Outer wrapper covers full width */
+.promo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0; /* top & bottom spacing */
+  background: #fff; /* or any background color */
+}
+
+/* Video container with left & right margin */
+.promo-video {
+  width: 90%; /* gives left + right margin */
+  max-width: 1500px; /* prevents video from being too wide */
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+}

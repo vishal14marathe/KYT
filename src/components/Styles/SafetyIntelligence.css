@@ -1,0 +1,85 @@
+/* MAIN SCREEN SECTION */
+.safety-container {
+  display: flex;
+  background: #f5f7fc;
+  padding: 15px 90px;
+  position: relative;
+  min-height: 700px;
+  margin-top: 30px;
+}
+
+/* ---------------- LEFT VERTICAL TITLE ---------------- */
+.left-title {
+  position: absolute;
+  left: 80px;
+  top: 680px;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  display: flex;
+  flex-direction: column;
+}
+
+/* "Dynamic" */
+.title-dynamic {
+  font-size: 45px;
+  font-weight: 700;
+  color: #97a6b7;
+  margin-bottom: 31px;
+}
+
+/* "Safety Intelligence" */
+.title-safety {
+  font-size: 65px;
+  font-weight: 700;
+  color: #5351f4;
+  line-height: 0.9;
+}
+
+/* ---------------- RIGHT CONTENT ---------------- */
+.right-content {
+  margin-left: 260px;
+  width: 1166px;
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+
+/* ---------------- ROW ITEMS ---------------- */
+.safety-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Numbers: 01, 02, 03 */
+.num {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 76px;
+  margin-right: 30px;
+}
+
+/* Titles */
+.row-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(60, 60, 60, 1);
+  margin-bottom: 10px;
+}
+
+/* Descriptions */
+.row-desc {
+  max-width: 700px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ---------------- CARD WITH GLOW ---------------- */
+.card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 22px;
+  box-shadow: 25px 25px 70px rgba(130, 100, 255, 0.25),
+    10px 10px 25px rgba(130, 100, 255, 0.15);
+}
