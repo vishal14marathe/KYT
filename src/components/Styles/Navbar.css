@@ -13,6 +13,28 @@
   z-index: 1000;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: #2d2d2d; /* or any color you want */
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #4a49f1; /* hover effect */
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+}
+
 .company_logo img {
   width: 20px;
   height: 35px;

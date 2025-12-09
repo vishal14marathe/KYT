@@ -16,6 +16,7 @@ import Privacy from "./components/Privacy";
 function App() {
   return (
     <Router>
+      {/* Header always visible */}
       <Navbar />
 
       <Routes>
@@ -30,7 +31,6 @@ function App() {
               <PromoVideoSection />
               <TestimonialCard />
               <CTASection />
-              <FooterSection />
             </>
           }
         />
@@ -41,6 +41,9 @@ function App() {
         {/* PRIVACY PAGE */}
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
+
+      {/* Footer always visible */}
+      <FooterSection />
     </Router>
   );
 }
