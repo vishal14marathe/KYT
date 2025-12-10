@@ -15,3 +15,128 @@
   object-fit: cover;
   display: block;
 }
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Large Desktops */
+@media (max-width: 1600px) {
+  .promo-wrapper {
+    padding: 45px 0;
+  }
+
+  .promo-video {
+    width: 88%;
+    max-width: 1400px;
+    border-radius: 22px;
+  }
+}
+
+/* Laptops & Small Desktops */
+@media (max-width: 1200px) {
+  .promo-wrapper {
+    padding: 40px 0;
+  }
+
+  .promo-video {
+    width: 92%;
+    max-width: 1200px;
+    border-radius: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .promo-wrapper {
+    padding: 35px 0;
+  }
+
+  .promo-video {
+    width: 94%;
+    max-width: 900px;
+    border-radius: 18px;
+  }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+  .promo-wrapper {
+    padding: 30px 0;
+  }
+
+  .promo-video {
+    width: 96%;
+    max-width: 700px;
+    border-radius: 16px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .promo-wrapper {
+    padding: 25px 0;
+  }
+
+  .promo-video {
+    width: 98%;
+    border-radius: 14px;
+  }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 480px) {
+  .promo-wrapper {
+    padding: 20px 0;
+  }
+
+  .promo-video {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+/* Extra Small Mobile Phones */
+@media (max-width: 360px) {
+  .promo-wrapper {
+    padding: 15px 0;
+  }
+
+  .promo-video {
+    border-radius: 10px;
+  }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .promo-wrapper {
+    padding: 15px 0;
+  }
+
+  .promo-video {
+    width: 96%;
+    max-height: 70vh;
+  }
+}
+
+/* Large Screens (4K and above) */
+@media (min-width: 2000px) {
+  .promo-video {
+    max-width: 1800px;
+  }
+}
+
+/* Prevent horizontal scroll and ensure video responsiveness */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Make video responsive by default */
+video {
+  max-width: 100%;
+  height: auto;
+}

@@ -83,3 +83,107 @@
   box-shadow: 25px 25px 70px rgba(130, 100, 255, 0.25),
     10px 10px 25px rgba(130, 100, 255, 0.15);
 }
+
+@media (max-width: 1024px) {
+  /* Container becomes vertical */
+  .safety-container {
+    flex-direction: column !important;
+    padding: 30px 35px !important;
+    min-height: auto !important;
+  }
+
+  /* Vertical title becomes horizontal + centered */
+  .left-title {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    transform: none !important;
+    transform-origin: unset !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    margin-bottom: 25px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .title-dynamic {
+    font-size: 28px !important;
+    margin: 0 !important;
+  }
+
+  .title-safety {
+    font-size: 36px !important;
+    margin: 0 !important;
+  }
+
+  /* Right content full width */
+  .right-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    gap: 40px !important;
+  }
+
+  /* Each row stacks */
+  .safety-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
+  }
+
+  .num {
+    font-size: 28px !important;
+    margin: 0 !important;
+  }
+
+  .row-title {
+    font-size: 22px !important;
+  }
+
+  .row-desc {
+    font-size: 16px !important;
+    max-width: 90% !important;
+    line-height: 1.4 !important;
+    margin: 0 auto !important;
+  }
+
+  .card {
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-dynamic {
+    font-size: 22px !important;
+  }
+
+  .title-safety {
+    font-size: 28px !important;
+  }
+
+  .num {
+    font-size: 22px !important;
+  }
+
+  .row-title {
+    font-size: 18px !important;
+  }
+
+  .row-desc {
+    font-size: 14px !important;
+    max-width: 95% !important;
+  }
+
+  .card {
+    padding: 14px !important;
+    border-radius: 16px !important;
+  }
+}
